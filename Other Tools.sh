@@ -167,7 +167,7 @@ function menujob ()
             # Install Fire OS
             ./adb shell twrp sideload
             sleep 5
-            ./adb sideload update.zip
+            ./adb sideload ~./files/Downloads/FireOS4.5.5.3.zip
             sleep 5
             ./adb reboot
 
