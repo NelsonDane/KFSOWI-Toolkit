@@ -162,7 +162,7 @@ function menujob ()
 
             sleep 2
             ./adb shell twrp wipe factoryreset
-	    			./adb shell twrp wipe system
+	    ./adb shell twrp wipe system
             sleep 2
             # Install Fire OS
             ./adb shell twrp sideload
