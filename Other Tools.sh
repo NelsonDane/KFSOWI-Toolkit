@@ -58,21 +58,21 @@ function menujob ()
 
             echo ""
 
-            ./adb reboot recovery
+            ./files/adb reboot recovery
             read -p "Press [Enter] once you are in TWRP"
             sleep 1
-            ./adb shell twrp sideload
+            ./files/adb shell twrp sideload
             sleep 3
-            ./adb sideload Gapps/KFSOWIgapps.zip
+            ./files/adb sideload Gapps/KFSOWIgapps.zip
             sleep 2
-            ./adb shell twrp wipe cache
+            ./files/adb shell twrp wipe cache
             sleep 1
-            ./adb shell twrp wipe dalvik
+            ./files/adb shell twrp wipe dalvik
             sleep 1
             echo "Please unplug and replug in your Kindle"
             read -p "Press [Enter] once you unplugged and replugged in your Kindle"
             sleep 3
-            ./adb reboot
+            ./files/adb reboot
             ;;
 
         2)  echo " Installing Xposed... "
@@ -82,12 +82,12 @@ function menujob ()
 						cd Downloads
 						curl -o XposedInstaller_v2.6.1_by_SolarWarez_20151129.apk https://forum.xda-developers.com/attachment.php?attachmentid=3559144&d=1448805545
 						cd ..
-						./adb install Downloads/XposedInstaller_v2.6.1_by_SolarWarez_20151129.apk
-            ./adb reboot recovery
+						./files/adb install Downloads/XposedInstaller_v2.6.1_by_SolarWarez_20151129.apk
+            ./files/adb reboot recovery
             read -p "Press [Enter] when you are in TWRP"
-            ./adb shell twrp install Downloads/Xposed-Installer-Recovery.zip
+            ./files/adb shell twrp install Downloads/Xposed-Installer-Recovery.zip
             sleep 1
-            ./adb reboot
+            ./files/adb reboot
 
             ;;
 
@@ -97,7 +97,7 @@ function menujob ()
             echo ""
 
             curl -o novalauncher.apk http://teslacoilsw.com/tesladirect/download.pl?packageName=com.teslacoilsw.launcher
-            ./adb install novalauncher.apk
+            ./files/adb install novalauncher.apk
 
             file="novalauncher.apk"
 
@@ -111,14 +111,14 @@ function menujob ()
 
             echo ""
 
-            ./adb reboot
+            ./files/adb reboot
             ;;
 
         5) echo " Rebooting into TWRP Recovery..."
 
             echo ""
 
-            ./adb reboot recovery
+            ./files/adb reboot recovery
             ;;
 
         6)  echo " Booting into System..."
@@ -132,7 +132,7 @@ function menujob ()
 
             echo ""
 
-            ./adb reboot recovery
+            ./files/adb reboot recovery
 
             ;;
 
@@ -140,13 +140,13 @@ function menujob ()
 
             echo ""
 
-            ./adb uninstall de.robv.android.xposed.installer
+            ./files/adb uninstall de.robv.android.xposed.installer
             sleep 3
-            ./adb reboot recovery
+            ./files/adb reboot recovery
             read -p "Press [Enter] when you are in TWRP"
-            ./adb shell twrp install Xposed/Xposed-Disabler-Recovery.zip
+            ./files/adb shell twrp install Xposed/Xposed-Disabler-Recovery.zip
             sleep 2
-            ./adb reboot
+            ./files/adb reboot
 
             ;;
 
@@ -156,20 +156,20 @@ function menujob ()
 
             echo ""
 
-            ./adb reboot recovery
+            ./files/adb reboot recovery
             read -p "Press [Enter] once you are in TWRP"
             # Wiping in TWRP
 
             sleep 2
-            ./adb shell twrp wipe factoryreset
+            ./files/adb shell twrp wipe factoryreset
 	    			./adb shell twrp wipe system
             sleep 2
             # Install Fire OS
-            ./adb shell twrp sideload
+            ./files/adb shell twrp sideload
             sleep 5
-            ./adb sideload update.zip
+            ./files/adb sideload update.zip
             sleep 5
-            ./adb reboot
+            ./files/adb reboot
 
             ;;
 
