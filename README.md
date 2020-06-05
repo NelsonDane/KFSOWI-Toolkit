@@ -1,7 +1,7 @@
 # KFSOWI-Toolkit
 A set of tools to install TWRP (Which allows custom ROMS to be installed) and Roots the Kindle (All supported FireOS versions) with SuperSU. Also includes other tools for installing Xposed, Nova Launcher, and undoing anything you did with the tool (Including returning to stock). Only works on the Kindle Fire 3rd gen (Soho/KFSOWI).
 
-<b>Welcome to the KFSOWI TWRP Tool.</b>
+<b>Welcome to the KFSOWI TWRP Tool!</b>
 
 This tool was developed by Nelson Dane using commands by spudowiar. The reason we have TWRP for the KFSOWI is because of them. This tool automates the install of TWRP 2.8.7.0 from spudowiar's guide. For some reason the newest TWRP doesn’t work and is slow and glitchy (I tried it.)
 
