@@ -3,7 +3,7 @@ A set of tools to install TWRP (Which allows custom ROMS to be installed) and Ro
 
 ## Welcome to the KFSOWI TWRP Tool!
 
-This tool was developed by me using commands by spudowiar. The reason we have TWRP for the KFSOWI is because of them. This tool automates the install of TWRP 2.8.7.0 from spudowiar's guide. For some reason the newest TWRP image didn't work and was slow and glitchy (I tried it.)
+This tool was developed by me using the commands in spudowiar's [tutorial](https://forum.xda-developers.com/t/kindle-fire-hd-3rd-generation-bootloader-unlock-and-twrp.3262770/). The reason we have TWRP for the KFSOWI is because of them. This tool automates the install of TWRP 2.8.7.0 from spudowiar's guide. For some reason the newest TWRP image didn't work and was slow and glitchy (I tried it.)
 
 ### In order to use this tool you must have:
 
